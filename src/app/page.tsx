@@ -17,6 +17,7 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
+
   // Open modal & set active image index
   const openModal = (index: number) => {
     setCurrentIndex(index);
@@ -43,15 +44,25 @@ export default function Home() {
 
   return (
     <div style={{
-      backgroundColor: "#C1D6EC",
-      minHeight: "auto",
-      padding: "20px",
+      // backgroundColor: "#C1D6EC",
+      // minHeight: "auto",
+      // padding: "20px",
+      // display: "flex",
+      // justifyContent: "center",
+      // alignItems: "center",
+      // flexDirection: "column",
+      // width: "90%",
+      // maxWidth: "800px",
+
+ backgroundColor: "#C1D6EC",
+      minHeight: "100vh", 
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      flexDirection: "column",
+      padding: "20px",
       width: "90%",
-      maxWidth: "800px",
+      maxWidth: "100vw",
+      margin: "0 auto",
     }}>
       <style jsx>{`
         @media (max-width: 600px) {
@@ -73,6 +84,12 @@ export default function Home() {
         border: "2px solid #000080",
         boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
         textAlign: "center",
+
+
+        minHeight: "80vh", // ✅ Ensures it stays balanced across screen sizes
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       }}>
         <header>
           <h1 style={{

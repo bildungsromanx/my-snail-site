@@ -43,8 +43,8 @@ const paintings = [
     { id: "37", src: "/paintings/37.webp", caption: "Study in Developmental Biology (1), 2025", date: "2025-04-04" },
     { id: "38", src: "/paintings/38.webp", caption: "Study in Developmental Biology (2), 2025", date: "2025-04-04" },
     { id: "39", src: "/paintings/39.webp", caption: "Crying Chicken, 2025", date: "2025-05-09" },
-    { id: "40", src: "/paintings/40.webp", caption: "Iguana, 2025", date: "2025-05-09" },
-    { id: "41", src: "/paintings/41.webp", caption: "Forest, 2025", date: "2025-05-09" },
+    // { id: "40", src: "/paintings/40.webp", caption: "Iguana, 2025", date: "2025-05-09" },
+    // { id: "41", src: "/paintings/41.webp", caption: "Forest, 2025", date: "2025-05-09" },
     { id: "42", src: "/paintings/42.webp", caption: "Tai Chi Ball, 2025", date: "2025-05-09" },
     { id: "43", src: "/paintings/43.webp", caption: "Study in Developmental Biology (3), 2025", date: "2025-04-04" },
 ];
@@ -69,8 +69,29 @@ export default function PaintingsPage() {
   const [selectedYear, setSelectedYear] = useState(years[0]);
 
   return (
-    <div style={{ backgroundColor: "#C1D6EC", padding: "20px", width: "90%", maxWidth: "800px" }}>
-      <div style={{ backgroundColor: "#FFFFFF", padding: "20px", border: "2px solid #000080" }}>
+    <div style={{ 
+       backgroundColor: "#C1D6EC",
+      minHeight: "100vh", // Ensures full screen height
+      display: "flex", // Enables flexbox centering
+      justifyContent: "center", // Centers horizontally
+      alignItems: "center", // Centers vertically
+      padding: "20px", 
+      width: "90%", 
+      maxWidth: "100vw", // Prevents overflow forcing an unwanted shift
+      margin: "0 auto", 
+       }}>
+      <div style={{ 
+        backgroundColor: "#FFFFFF",
+        padding: "20px",
+        border: "2px solid #000080",
+        boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
+        display: "flex",
+        flexDirection: "column", // Ensures vertical stacking
+        minHeight: "80vh", // Makes the box take most of the screen
+        maxWidth: "800px",
+        width: "90%",
+        margin: "0 auto", 
+        }}>
         
         {/* 📅 Year Navigation */}
         {/* 📅 Year Navigation */}
@@ -101,7 +122,11 @@ export default function PaintingsPage() {
 </nav>
 
         {/* 🎨 Painting Display */}
-        <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
+        <div style={{ 
+          display: "grid", 
+          gap: "20px", 
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          }}>
           {paintingsByYear[selectedYear].map((painting) => (
             <PaintingCard key={painting.id} src={painting.src} caption={painting.caption} />
           ))}

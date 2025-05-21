@@ -1,36 +1,21 @@
-// export default function WritingsPage() {
-//     return (
-//       <div style={{ minHeight: '100vh', padding: '20px' }}>
-//         <div
-//           style={{
-//             maxWidth: '600px',
-//             margin: '0 auto',
-//             backgroundColor: '#FFFFFF',
-//             padding: '40px',
-//             border: '2px solid #000080',
-//             boxShadow: '2px 2px 5px rgba(0,0,0,0.3)',
-//             textAlign: 'center',
-//           }}
-//         >
-//           <h1 style={{ color: 'red', fontFamily: "'League Script', cursive", fontSize: '3rem' }}>
-//             writings
-//           </h1>
-//           <p style={{ fontFamily: "'Times New Roman', serif", fontSize: '1.5rem', marginTop: '20px' }}>
-//             Under Construction 🚧
-//           </p>
-//         </div>
-//       </div>
-//     );
-//   }
-  
-
 "use client"; 
 
 import Image from "next/image";
 
 export default function AboutMePage() {
   return (
-    <div style={{ minHeight: "100vh", padding: "20px" }}>
+    <div style={{ 
+      minHeight: "100vh", 
+      padding: "20px",
+      backgroundColor: "#C1D6EC",
+      display: "flex",
+      justifyContent: "center", // Centers horizontally
+  alignItems: "center", // Centers vertically
+  width: "90%",
+  maxWidth: "100vw", // Prevents overflow issues
+  margin: "0 auto",
+
+       }}>
       <style jsx>{`
         .bioContainer {
           display: flex;
@@ -53,13 +38,27 @@ export default function AboutMePage() {
 
       <div
         style={{
+          // maxWidth: "600px",
+          // margin: "0 auto",
+          // backgroundColor: "#FFFFFF",
+          // padding: "40px",
+          // border: "2px solid #000080",
+          // boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
+          // textAlign: "center",
           maxWidth: "600px",
-          margin: "0 auto",
-          backgroundColor: "#FFFFFF",
-          padding: "40px",
-          border: "2px solid #000080",
-          boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
-          textAlign: "center",
+  margin: "0 auto",
+  backgroundColor: "#FFFFFF",
+  padding: "20px", // ✅ Reduce padding to make it match other pages
+  border: "2px solid #000080",
+  boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
+  textAlign: "center",
+  minHeight: "80vh", // ✅ Ensures it stays balanced across screen sizes
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+
+
+
         }}
       >
         <h1

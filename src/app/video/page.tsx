@@ -118,15 +118,25 @@ const sortedVideos = [...videos].sort(
 export default function VideoPage() {
     return (
       <div style={{
-        backgroundColor: "#C1D6EC",
-        minHeight: "auto",
-        padding: "20px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        width: "90%",
-        maxWidth: "800px",
+        // backgroundColor: "#C1D6EC",
+        // minHeight: "auto",
+        // padding: "20px",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
+        // flexDirection: "column",
+        // width: "90%",
+        // maxWidth: "800px",
+
+      backgroundColor: "#C1D6EC",
+      minHeight: "100vh", // Ensures full screen height
+      display: "flex", // Enables flexbox centering
+      justifyContent: "center", // Centers horizontally
+      alignItems: "center", // Centers vertically
+      padding: "20px", 
+      width: "90%", 
+      maxWidth: "100vw", // Prevents overflow forcing an unwanted shift
+      margin: "0 auto", 
       }}>
       
         <div

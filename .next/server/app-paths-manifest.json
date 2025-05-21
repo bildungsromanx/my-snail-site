@@ -1,4 +1,10 @@
 {
-  "/page": "app/page.js",
-  "/paintings/page": "app/paintings/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/journal/page": "app/journal/page.js",
+  "/aboutme/page": "app/aboutme/page.js",
+  "/paintings/page": "app/paintings/page.js",
+  "/snail/page": "app/snail/page.js",
+  "/video/page": "app/video/page.js",
+  "/page": "app/page.js"
 }
