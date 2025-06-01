@@ -126,7 +126,7 @@ export default function Home() {
             marginTop: "10px",
             textAlign: "center",
             }}>
-            Let&apos;s welcome this month&apos;s snail. <em>She is so cute, posing for the photo.</em> new snail photo updated every month.
+            This month&apos;s snail is a mouthful to say &apos;&apos;Phyllodesmium iriomotense&apos;&apos;. <em>I picture her eating a gusher tasting baby squid and the ink spreading throughout her body. </em> New snail photo updated every month.
             </p>
         </div>
 
