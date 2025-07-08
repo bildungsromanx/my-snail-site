@@ -112,7 +112,7 @@ export default function Home() {
         {/* Main Featured Image */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0" }}>
           <Image
-            src="/homepage/gallery1.png"
+            src="/homepage/july.jpg"
             alt="Art 1"
             layout="responsive"
             width={500}
@@ -126,7 +126,7 @@ export default function Home() {
             marginTop: "10px",
             textAlign: "center",
             }}>
-            This month&apos;s snail is a mouthful to say &apos;&apos;Phyllodesmium iriomotense&apos;&apos;. <em>I picture her eating a gusher tasting baby squid and the ink spreading throughout her body. </em> New snail photo updated every month.
+            I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of each month except that i did not do that this month because i have been worried about many things much larger than snails. Not that my inspiration is running low; just that the will to execute them has been running thin lately. (And now suddenly i am talking about making art instead of snails photos) What it is, i am not sure. I currently feel like this snail particularly because of her downcast antennas. </em> New snail photo updated every month.
             </p>
         </div>
 
