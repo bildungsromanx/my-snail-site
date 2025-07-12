@@ -38,13 +38,6 @@ export default function AboutMePage() {
 
       <div
         style={{
-          // maxWidth: "600px",
-          // margin: "0 auto",
-          // backgroundColor: "#FFFFFF",
-          // padding: "40px",
-          // border: "2px solid #000080",
-          // boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
-          // textAlign: "center",
           maxWidth: "600px",
   margin: "0 auto",
   backgroundColor: "#FFFFFF",
@@ -123,6 +116,10 @@ export default function AboutMePage() {
             Eileen is a writer, creator, and thinker. With a background in (to be determined), they bring 
             thousands of references, hours-old coffee, and an undying psychosis to every project.
           </p>
+          <p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
+  📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
+</p>
+
         </div>
       </div>
     </div>
