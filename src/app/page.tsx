@@ -1,11 +1,9 @@
-
-// "use client"; // Ensure this runs as a Client Component
+// "use client";
 
 // import { useState } from "react";
 // import Image from "next/image";
-// import Draggable from 'react-draggable';
 // import DraggableNote from "./DraggableNote";
-
+// import LoadingOverlay from "./LoadingOverlay";
 
 // const galleryImages = [
 //   "/homepage/gallery2.png",
@@ -20,19 +18,13 @@
 //   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 //   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-
-//   // Open modal & set active image index
 //   const openModal = (index: number) => {
 //     setCurrentIndex(index);
 //     setSelectedImage(galleryImages[index]);
 //   };
 
-//   // Close modal
-//   const closeModal = () => {
-//     setSelectedImage(null);
-//   };
+//   const closeModal = () => setSelectedImage(null);
 
-//   // Navigate images in modal
 //   const nextImage = () => {
 //     const newIndex = (currentIndex + 1) % galleryImages.length;
 //     setCurrentIndex(newIndex);
@@ -46,16 +38,18 @@
 //   };
 
 //   return (
+//     <div>
+//     <LoadingOverlay />
+
 //     <div style={{
-//  backgroundColor: "#C1D6EC",
-//       minHeight: "100vh", 
-//       display: "flex",
-//       justifyContent: "center",
-//       alignItems: "center",
+//       backgroundColor: "#C1D6EC",
+//       minHeight: "100vh",
+//       position: "relative", // Important for draggable layering
 //       padding: "20px",
 //       width: "90%",
 //       maxWidth: "100vw",
 //       margin: "0 auto",
+//       overflow: "hidden",
 //     }}>
 //       <style jsx>{`
 //         @media (max-width: 600px) {
@@ -69,6 +63,7 @@
 //         }
 //       `}</style>
 
+//       {/* Main layout box */}
 //       <div style={{
 //         maxWidth: "800px",
 //         margin: "0 auto",
@@ -77,9 +72,7 @@
 //         border: "2px solid #000080",
 //         boxShadow: "2px 2px 5px rgba(0,0,0,0.3)",
 //         textAlign: "center",
-
-
-//         minHeight: "80vh", // ✅ Ensures it stays balanced across screen sizes
+//         minHeight: "80vh",
 //         display: "flex",
 //         flexDirection: "column",
 //         justifyContent: "center",
@@ -98,16 +91,15 @@
 //             fontSize: "1.2rem",
 //             marginTop: 0,
 //           }}>
-//             welcome, this is where i put some of my stuff. 
+//             welcome, this is where i put some of my stuff.
 //           </p>
 //         </header>
 
-//         {/* Main Featured Image */}
 //         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0" }}>
 //           <Image
 //             src="/homepage/july.jpg"
 //             alt="Art 1"
-//             layout="responsive"
+//             // layout="responsive"
 //             width={500}
 //             height={500}
 //             style={{ objectFit: "contain", maxWidth: "100%", borderRadius: "5px" }}
@@ -118,58 +110,25 @@
 //             color: "#666",
 //             marginTop: "10px",
 //             textAlign: "center",
-//             }}>
-//             I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of each month except that i did not do that this month because i have been worried about many things much larger than snails. </em> New snail photo updated every month.
-//             </p>
+//           }}>
+//             I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of each month except that i did not do that this month because i have been worried about many things much larger than snails.</em> New snail photo updated every month.
+//           </p>
 //         </div>
-    
 
-// <Draggable>
-//   <div style={{
-//     backgroundColor: "#f9f9f9",
-//     borderLeft: "4px solid #000080",
-//     padding: "15px",
-//     marginTop: "30px",
-//     fontFamily: "'Courier New', Courier, monospace",
-//     width: "300px",
-//     cursor: "move",
-//     boxShadow: "2px 2px 5px rgba(0,0,0,0.2)",
-//     position: "absolute", // makes it hover over layout
-//     zIndex: 10,
-//   }}>
-//     <h3 style={{ marginBottom: "10px", color: "#000080" }}>what i’m currently up to</h3>
-//     <p style={{ marginBottom: "10px" }}>
-//       debugging my own psyche. also sketching a sound-reactive jellyfish...
-//     </p>
-
-//     {/* Optional embedded photo */}
-//     <Image 
-//       src="/homepage/current2.jpg" 
-//       alt="Latest inspiration" 
-//       width={250} 
-//       height={150} 
-//       style={{ borderRadius: "5px" }}
-//     />
-//   </div>
-// </Draggable>
-
-
-//         {/* Heading & Blurb before Gallery */}
 //         <div style={{ textAlign: "center", marginTop: "20px" }}>
 //           <h2 style={{ fontFamily: "'Times New Roman', serif", fontSize: "1rem", color: "#000080" }}>
 //             Latest showings:
 //           </h2>
 //           <p style={{ fontFamily: "'Times New Roman', serif", fontSize: "1rem", maxWidth: "600px", margin: "0 auto" }}>
-//           below are pictures from Funeral Home where i showed a video piece. Alongside Avi Young and Daniela Llanes. It was a cool curation by Gabriela Fernandez (hi, ur amazing). 
+//             below are pictures from Funeral Home where i showed a video piece. Alongside Avi Young and Daniela Llanes. It was a cool curation by Gabriela Fernandez (hi, ur amazing).
 //           </p>
 //         </div>
 
-//         {/* Mini Gallery - Single Row */}
 //         <div style={{
 //           display: "flex",
 //           justifyContent: "center",
 //           gap: "10px",
-//           flexWrap: "wrap", // Makes sure it fits on smaller screens while staying neat
+//           flexWrap: "wrap",
 //           marginTop: "20px",
 //         }}>
 //           {galleryImages.map((src, index) => (
@@ -186,7 +145,10 @@
 //         </div>
 //       </div>
 
-//       {/* Modal - Enlarged Image View */}
+//       {/* ✨ Floating blog note outside layout */}
+//       <DraggableNote />
+
+//       {/* Modal viewer */}
 //       {selectedImage && (
 //         <div style={{
 //           position: "fixed",
@@ -238,16 +200,18 @@
 //         </div>
 //       )}
 //     </div>
-//   );
+//     </div>  
+//     );
 // }
 
 
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import DraggableNote from "./DraggableNote";
+import LoadingOverlay from "./LoadingOverlay";
 
 const galleryImages = [
   "/homepage/gallery2.png",
@@ -261,6 +225,15 @@ const galleryImages = [
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100); // You can adjust the timing
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   const openModal = (index: number) => {
     setCurrentIndex(index);
@@ -281,11 +254,14 @@ export default function Home() {
     setSelectedImage(galleryImages[newIndex]);
   };
 
+  // Show only the loader until `isLoaded` becomes true
+  if (!isLoaded) return <LoadingOverlay />;
+
   return (
     <div style={{
       backgroundColor: "#C1D6EC",
       minHeight: "100vh",
-      position: "relative", // Important for draggable layering
+      position: "relative",
       padding: "20px",
       width: "90%",
       maxWidth: "100vw",
@@ -304,7 +280,7 @@ export default function Home() {
         }
       `}</style>
 
-      {/* Main layout box */}
+      {/* Layout box */}
       <div style={{
         maxWidth: "800px",
         margin: "0 auto",
@@ -340,7 +316,6 @@ export default function Home() {
           <Image
             src="/homepage/july.jpg"
             alt="Art 1"
-            layout="responsive"
             width={500}
             height={500}
             style={{ objectFit: "contain", maxWidth: "100%", borderRadius: "5px" }}
@@ -352,15 +327,16 @@ export default function Home() {
             marginTop: "10px",
             textAlign: "center",
           }}>
-I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of each month except that i did not do that this month because i have been worried about many things much larger than snails. </em> New snail photo updated every month.          </p>
+            I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of each month except that i did not do that this month because i have been worried about many things much larger than snails.</em> New snail photo updated every month.
+          </p>
         </div>
 
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <h2 style={{ fontFamily: "'Times New Roman', serif", fontSize: "1rem", color: "#000080" }}>
-            latest showings:
+            Latest showings:
           </h2>
           <p style={{ fontFamily: "'Times New Roman', serif", fontSize: "1rem", maxWidth: "600px", margin: "0 auto" }}>
-            below are pictures from Funeral Home where i showed a video piece. Alongside Avi Young and Daniela Llanes...
+            below are pictures from Funeral Home where i showed a video piece. Alongside Avi Young and Daniela Llanes. It was a cool curation by Gabriela Fernandez (hi, ur amazing).
           </p>
         </div>
 
@@ -385,10 +361,8 @@ I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of 
         </div>
       </div>
 
-      {/* ✨ Floating blog note outside layout */}
       <DraggableNote />
 
-      {/* Modal viewer */}
       {selectedImage && (
         <div style={{
           position: "fixed",
@@ -401,6 +375,7 @@ I hope you enjoy July&apos;s snail. <em>I aim to update on the midnight mark of 
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
+          zIndex: 100,
         }}>
           <button onClick={closeModal} style={{
             position: "absolute",
