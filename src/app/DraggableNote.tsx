@@ -30,7 +30,7 @@ export default function DraggableNote() {
           <h3 style={{ marginBottom: "10px", color: "#000080" }}>what i’m currently up to</h3>
           <p style={{ marginBottom: "10px" }}>
           My family came back from Japan and brought me Sumi ink and calligraphy brushes- I am eternally grateful and have been painting in a somewhat sumi-e/ illustrative style recently as you can see. The ink and brush are extremely satisfying. 
-          I'm working on creating a series of B&W illustrations using just ink! 
+          I&apos;m working on creating a series of B&amp;W illustrations using just ink! 
           </p>
 
           <Image
