@@ -119,7 +119,9 @@ export default function AboutMePage() {
           <p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
   📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
 </p>
-
+<p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
+  📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
+</p>
         </div>
       </div>
     </div>
