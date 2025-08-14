@@ -29,15 +29,15 @@ export default function DraggableNote() {
         >
           <h3 style={{ marginBottom: "10px", color: "#000080" }}>what i’m currently up to</h3>
           <p style={{ marginBottom: "10px" }}>
-          My family came back from Japan and brought me Sumi ink and calligraphy brushes- I am eternally grateful and have been painting in a somewhat sumi-e/ illustrative style recently as you can see. The ink and brush are extremely satisfying. 
-          I&apos;m working on creating a series of B&amp;W illustrations using just ink! 
+          Working on a new series of oil paintings that make me laugh with pure manic joy.  
           </p>
-
+                   {/* <p>My family came back from Japan and brought me Sumi ink and calligraphy brushes- I am eternally grateful and have been painting in a somewhat sumi-e/ illustrative style recently as you can see. The ink and brush are extremely satisfying. 
+                   I&apos;m working on creating a series of B&amp;W illustrations using just ink! </p> */}
           <Image
-            src="/homepage/sketch.jpg"
+            src="/homepage/process.jpg"
             alt="Latest inspiration"
-            width={250}
-            height={150}
+            width={300}
+            height={200}
             style={{ borderRadius: "5px", cursor: "pointer" }}
             onClick={() => setIsEnlarged(true)}
           />
@@ -69,10 +69,10 @@ export default function DraggableNote() {
             cursor: "pointer",
           }}>✖</button>
           <Image
-            src="/homepage/sketch.jpg"
+            src="/homepage/process.jpg"
             alt="Enlarged photo"
-            width={600}
-            height={400}
+            width={800}
+            height={600}
             style={{ borderRadius: "10px", objectFit: "contain" }}
           />
         </div>

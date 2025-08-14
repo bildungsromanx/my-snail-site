@@ -116,12 +116,32 @@ export default function AboutMePage() {
             Eileen is a writer, creator, and thinker. With a background in (to be determined), they bring 
             thousands of references, hours-old coffee, and an undying psychosis to every project.
           </p>
-          <p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
+
+          {/* <p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
   📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
-</p>
-<p style={{ marginTop: "30px", fontFamily: "'Times New Roman', serif" }}>
-  📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
-</p>
+</p> */}
+
+
+
+
+
+<div style={{ 
+  display: "flex", 
+  flexDirection: "column", 
+  marginTop: "30px", 
+  fontFamily: "'Times New Roman', serif", 
+  textAlign: "left" 
+}}>
+  <p>
+    📬 Reach me at <a href="mailto:eileenzelaya@outlook.com" style={{ color: "#000080" }}>eileenzelaya@outlook.com</a>
+  </p>
+  <p style={{ 
+    marginTop: "10px", 
+    fontSize: "1rem", 
+  }}>
+    p.s. i buy all my art supplies and coffee on my own. If you somehow like what you see then consider helping me get nice supplies!  <a href="https://cash.app/$EileenZelaya" target="_blank" rel="noopener noreferrer" style={{ color: "#000080" }}>here</a>.
+  </p>
+</div>
         </div>
       </div>
     </div>
