@@ -38,18 +38,21 @@ const paintings = [
     { id: "32", src: "/paintings/23.webp", caption: "Self-portrait, 2023", date: "2023-02-19" },
     { id: "33", src: "/paintings/18.webp", caption: "Safety Blanket (2), 2023", date: "2023-02-19" },
     { id: "34", src: "/paintings/16.webp", caption: "Outside (2), 2023", date: "2023-02-19" },  
-    { id: "35", src: "/paintings/35.webp", caption: "Toad in Toad, 2025", date: "2025-04-04" },
+    { id: "35", src: "/paintings/35.webp", caption: "Toad in Toad, 2025", date: "2025-04-03" },
     { id: "36", src: "/paintings/36.webp", caption: "Study of fins, 2025", date: "2025-04-04" },
     { id: "37", src: "/paintings/37.webp", caption: "Study in Developmental Biology (1), 2025", date: "2025-04-04" },
     { id: "38", src: "/paintings/38.webp", caption: "Study in Developmental Biology (2), 2025", date: "2025-04-04" },
     { id: "39", src: "/paintings/39.webp", caption: "Crying Chicken, 2025", date: "2025-05-09" },
     // { id: "40", src: "/paintings/40.webp", caption: "Iguana, 2025", date: "2025-05-09" },
     // { id: "41", src: "/paintings/41.webp", caption: "Forest, 2025", date: "2025-05-09" },
-    { id: "42", src: "/paintings/42.webp", caption: "Tai Chi Ball, 2025", date: "2025-05-09" },
+    // { id: "42", src: "/paintings/42.webp", caption: "Tai Chi Ball, 2025", date: "2025-05-09" },
     { id: "43", src: "/paintings/43.webp", caption: "Study in Developmental Biology (3), 2025", date: "2025-04-04" },
 
-    { id: "44", src: "/paintings/44.webp", caption: "Lying in Bed, 2025", date: "2025-08-14" },
-    { id: "45", src: "/paintings/45.webp", caption: "Birthing, 2025", date: "2025-08-14" },
+    { id: "44", src: "/paintings/44.webp", caption: "Lying in Bed, 2025", date: "2025-08-12" },
+    { id: "45", src: "/paintings/45.webp", caption: "Birthing, 2025", date: "2025-08-13" },
+
+    { id: "46", src: "/paintings/46.webp", caption: "Shit, 2025", date: "2025-08-15" },
+    { id: "47", src: "/paintings/47.webp", caption: "Birthing (2), 2025", date: "2025-08-14" },
   ];
 
 
