@@ -48,7 +48,7 @@ const paintings = [
     // { id: "42", src: "/paintings/42.webp", caption: "Tai Chi Ball, 2025", date: "2025-05-09" },
     { id: "43", src: "/paintings/43.webp", caption: "Study in Developmental Biology (3), 2025", date: "2025-04-04" },
 
-    { id: "44", src: "/paintings/44.webp", caption: "Lying in Bed, 2025", date: "2025-08-12" },
+    // { id: "44", src: "/paintings/44.webp", caption: "Lying in Bed, 2025", date: "2025-08-12" },
     { id: "45", src: "/paintings/45.webp", caption: "Birthing, 2025", date: "2025-08-13" },
 
     { id: "46", src: "/paintings/46.webp", caption: "Shit, 2025", date: "2025-08-15" },
