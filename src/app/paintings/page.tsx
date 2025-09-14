@@ -13,7 +13,8 @@ export default function PaintingsPage() {
       margin: "0 auto",
       padding: "2rem 1rem",
       backgroundColor: "#c1d6ecff",
-      minHeight: "100vh"
+      minHeight: "100vh",
+      overflowX: "hidden",
     }}>
       <div
           style={{
@@ -69,7 +70,7 @@ export default function PaintingsPage() {
       <div style={{
         display: "grid",
         gap: "20px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))"
+        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))"
       }}>
         {paintingsByYear[selectedYear].map(painting => (
           <Link key={painting.id} href={`/paintings/${painting.id}`}>
