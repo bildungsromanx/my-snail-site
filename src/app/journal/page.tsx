@@ -64,7 +64,7 @@ export default function Journal() {
                 marginTop: 0,
               }}
             >
-              don't worry i didn't write about you, unless i did.
+              don&apos;t worry i didn&apos;t write about you, unless i did.
             </p>
           </header>
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2rem" }}>
