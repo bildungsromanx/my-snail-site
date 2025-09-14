@@ -118,16 +118,6 @@ const sortedVideos = [...videos].sort(
 export default function VideoPage() {
     return (
       <div style={{
-        // backgroundColor: "#C1D6EC",
-        // minHeight: "auto",
-        // padding: "20px",
-        // display: "flex",
-        // justifyContent: "center",
-        // alignItems: "center",
-        // flexDirection: "column",
-        // width: "90%",
-        // maxWidth: "800px",
-
       backgroundColor: "#C1D6EC",
       minHeight: "100vh", // Ensures full screen height
       display: "flex", // Enables flexbox centering

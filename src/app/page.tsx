@@ -52,7 +52,7 @@ export default function Home() {
 
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0" }}>
           <Image
-            src="/homepage/august.webp"
+            src="/homepage/september.jpg"
             alt="Art 1"
             width={900}
             height={500}
@@ -62,10 +62,10 @@ export default function Home() {
             fontFamily: "'Times New Roman', serif",
             fontSize: "0.9rem",
             color: "#666",
-            marginTop: "25px",
+            marginTop: "20px",
             textAlign: "center",
           }}>
-           August&apos;s snail. <em>If you stacked two pennies, you might get close to seeing how small this snail is. He is roughly 2mm in size! </em> New snail photo updated every month.
+           September&apos;s snail! She&apos;s so beautiful, i&apos;m crying.<em> New snail photo updated every month. </em>
           </p>
         </div>
 

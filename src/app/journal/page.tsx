@@ -46,6 +46,27 @@ export default function Journal() {
   };
 
   return (
+    <div><header style={{ textAlign: 'center' }}>
+            <h1
+              style={{
+                color: 'red',
+                fontFamily: "'League Script', cursive",
+                fontSize: '3rem',
+                marginBottom: '0.5rem',
+              }}
+            >
+              journal
+            </h1>
+            <p
+              style={{
+                fontFamily: "'Times New Roman', serif",
+                fontSize: '1.2rem',
+                marginTop: 0,
+              }}
+            >
+              don't worry i didn't write about you, unless i did.
+            </p>
+          </header>
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2rem" }}>
       <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "nowrap" }}>
         {pages[pageIndex] && (
@@ -67,6 +88,7 @@ export default function Journal() {
           Next
         </button>
       </div>
+    </div>
     </div>
   );
 }

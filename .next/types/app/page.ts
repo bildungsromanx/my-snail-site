@@ -1,4 +1,4 @@
-// File: /Users/eileenzelaya/my-applesnail-site/src/app/page.tsx
+// File: G:\snail site for PC (not mac)\my-snail-site\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
