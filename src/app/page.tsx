@@ -83,7 +83,7 @@ export default function Home() {
   }}
 >
   <p>
-    October's snail! Since it is October and spooky things are among us, I thought I'd share some snail anatomy:
+    October&apos;s snail! Since it is October and spooky things are among us, I thought I&apos;d share some snail anatomy:
   </p>
   <p><strong>Class:</strong> Gastropoda</p>
   <p><strong>Order:</strong> Pulmonata</p>
