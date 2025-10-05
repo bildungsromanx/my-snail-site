@@ -62,7 +62,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/homepage/september.jpg"
+            src="/homepage/october.jpg"
             alt="Art 1"
             width={900}
             height={500}
@@ -73,18 +73,40 @@ export default function Home() {
               borderRadius: "5px",
             }}
           />
-          <p
-            style={{
-              fontFamily: "'Times New Roman', serif",
-              fontSize: "0.9rem",
-              color: "#666",
-              marginTop: "0.75rem",
-              textAlign: "center",
-            }}
-          >
-            September&apos;s snail! She&apos;s so beautiful, i&apos;m crying.
-            <em> New snail photo updated every month. </em>
-          </p>
+          <div
+  style={{
+    fontFamily: "'Times New Roman', serif",
+    fontSize: "0.9rem",
+    color: "#666",
+    marginTop: "0.75rem",
+    textAlign: "center",
+  }}
+>
+  <p>
+    October's snail! Since it is October and spooky things are among us, I thought I'd share some snail anatomy:
+  </p>
+  <p><strong>Class:</strong> Gastropoda</p>
+  <p><strong>Order:</strong> Pulmonata</p>
+  <p><strong>Species:</strong> Land snail, <em>Helix</em></p>
+
+  <ul style={{ listStyleType: "none", padding: 0 }}>
+    <li>
+      <strong>External morphology:</strong> Two pairs of tentacles on the head, eyes on the tip of the superior posterior pair. Pneumostome and anus are shown. Asymmetrical spiral shell.
+    </li>
+    <li>
+      <strong>Internal morphology:</strong> Pulmonary vessels on the roof of the mantle cavity and circulatory system with heart (blue). Digestive system (green). Reproductive hermaphroditic system (pink). Nervous system with ganglia in the nervous ring (black).
+    </li>
+    <li>
+      <strong>Radula:</strong> Teeth that point backward.
+    </li>
+    <li>
+      <strong>Eye section:</strong> Cross-section of the eye structure.
+    </li>
+  </ul>
+
+  <em>New snail photo updated every month.</em>
+</div>
+
         </div>
 
         <DraggableNote />

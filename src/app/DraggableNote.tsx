@@ -29,7 +29,7 @@ export default function DraggableNote() {
         >
           <h3 style={{ marginBottom: "10px", color: "#000080" }}>what i’m currently up to</h3>
           <p style={{ marginBottom: "10px" }}>
-          Working on a new series of oil paintings that make me laugh with pure manic joy.  
+          Been working on pen and marker illustrations. Trying to keep it simple is a challenge. 
           </p>
                    {/* <p>My family came back from Japan and brought me Sumi ink and calligraphy brushes- I am eternally grateful and have been painting in a somewhat sumi-e/ illustrative style recently as you can see. The ink and brush are extremely satisfying. 
                    I&apos;m working on creating a series of B&amp;W illustrations using just ink! </p> */}
@@ -37,7 +37,7 @@ export default function DraggableNote() {
             src="/homepage/process.jpg"
             alt="Latest inspiration"
             width={300}
-            height={200}
+            height={400}
             style={{ borderRadius: "5px", cursor: "pointer" }}
             onClick={() => setIsEnlarged(true)}
           />
@@ -71,8 +71,8 @@ export default function DraggableNote() {
           <Image
             src="/homepage/process.jpg"
             alt="Enlarged photo"
-            width={800}
-            height={600}
+            width={1200}
+            height={800}
             style={{ borderRadius: "10px", objectFit: "contain" }}
           />
         </div>
