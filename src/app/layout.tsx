@@ -99,7 +99,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
               ["video", "/video"],
               ["paintings", "/paintings"],
               ["journal", "/journal"],
-              // ["snail stuff", "/snail"],
+              ["illustrations", "/illustrations"],
               ["about me", "/aboutme"],
             ].map(([label, href], index) => (
               <Link
