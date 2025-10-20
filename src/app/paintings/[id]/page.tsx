@@ -23,12 +23,6 @@ export default function PaintingDetailPage() {
   const painting = paintings.find(p => p.id === id);
 
 
-console.log("Year from query:", year);
-
-
-
-
-
   if (!painting) {
     return <div style={{ padding: "2rem" }}>Painting not found.</div>;
   }
