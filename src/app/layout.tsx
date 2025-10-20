@@ -98,7 +98,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
             {[
               ["video", "/video"],
               ["paintings", "/paintings"],
-              ["journal", "/journal"],
+              ["sketchbook", "/journal"],
               ["illustrations", "/illustrations"],
               ["about me", "/aboutme"],
             ].map(([label, href], index) => (

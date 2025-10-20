@@ -18,7 +18,7 @@ export default function DraggableNote() {
             borderLeft: "4px solid #000080",
             padding: "15px",
             fontFamily: "'Courier New', Courier, monospace",
-            width: "300px",
+            width: "200px",
             cursor: "move",
             boxShadow: "2px 2px 5px rgba(0,0,0,0.2)",
             position: "absolute",
@@ -29,15 +29,15 @@ export default function DraggableNote() {
         >
           <h3 style={{ marginBottom: "10px", color: "#000080" }}>what i’m currently up to</h3>
           <p style={{ marginBottom: "10px" }}>
-          Been working on pen and marker illustrations. Trying to keep it simple is a challenge. 
+         Just moved to Boston! My set up here is a little different than from home in Miami so it has been lots of simple drawings. No painting yet until i figure out how to paint safely without making a mess in my rented room. Is that even possible? Below is a picture of my computer desk set-up I spend lots of time at.
           </p>
                    {/* <p>My family came back from Japan and brought me Sumi ink and calligraphy brushes- I am eternally grateful and have been painting in a somewhat sumi-e/ illustrative style recently as you can see. The ink and brush are extremely satisfying. 
                    I&apos;m working on creating a series of B&amp;W illustrations using just ink! </p> */}
           <Image
-            src="/homepage/process.jpg"
+            src="/homepage/update.jpg"
             alt="Latest inspiration"
-            width={300}
-            height={400}
+            width={200}
+            height={170}
             style={{ borderRadius: "5px", cursor: "pointer" }}
             onClick={() => setIsEnlarged(true)}
           />
@@ -69,7 +69,7 @@ export default function DraggableNote() {
             cursor: "pointer",
           }}>✖</button>
           <Image
-            src="/homepage/process.jpg"
+            src="/homepage/update.jpg"
             alt="Enlarged photo"
             width={1200}
             height={800}

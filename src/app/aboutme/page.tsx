@@ -7,7 +7,7 @@ export default function AboutMePage() {
     <div style={{ 
       minHeight: "100vh", 
       padding: "20px",
-      backgroundColor: "#C1D6EC",
+      // backgroundColor: "#C1D6EC",
       display: "flex",
       justifyContent: "center", // Centers horizontally
   alignItems: "center", // Centers vertically
@@ -130,7 +130,7 @@ export default function AboutMePage() {
     marginTop: "10px", 
     fontSize: "1rem", 
   }}>
-    p.s. i buy all my art supplies and coffee on my own. If you somehow like what you see then consider helping me get nice supplies!  <a href="https://cash.app/$EileenZelaya" target="_blank" rel="noopener noreferrer" style={{ color: "#000080" }}>here</a>.
+    p.s. i buy all my art supplies and coffee. If you somehow like what you see then consider helping me get nice supplies!  <a href="https://cash.app/$EileenZelaya" target="_blank" rel="noopener noreferrer" style={{ color: "#000080" }}>here</a>.
   </p>
 </div>
         </div>

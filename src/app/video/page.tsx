@@ -150,15 +150,15 @@ export default function VideoPage() {
             >
               video archive
             </h1>
-            <p
+            {/* <p
               style={{
                 fontFamily: "'Times New Roman', serif",
                 fontSize: '1.2rem',
                 marginTop: 0,
               }}
             >
-              collection of moving image works
-            </p>
+             hi
+            </p> */}
           </header>
   
           <div style={{
