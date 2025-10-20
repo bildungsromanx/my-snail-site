@@ -114,7 +114,7 @@ export default function PaintingsPage() {
     if (parsedYear && years.includes(parsedYear) && parsedYear !== selectedYear) {
       setSelectedYear(parsedYear);
     }
-  }, [parsedYear]);
+  }, [parsedYear, selectedYear]);
 
   // Update URL when user clicks a year
   const handleYearClick = (year: number) => {
