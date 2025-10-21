@@ -57,7 +57,7 @@ export default function PaintingsClient() {
         <div style={{ display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
           {paintingsByYear[selectedYear].map(painting => (
             <Link key={painting.id} href={`/paintings/${painting.id}?year=${selectedYear}`}>
-              <img src={painting.src} alt={painting.caption} style={{ width: "100%", height: "auto", cursor: "pointer", borderRadius: "12px" }} />
+              <img src={painting.src} alt={painting.caption} style={{ width: "100%", height: "auto", cursor: "pointer" }} />
             </Link>
           ))}
         </div>
