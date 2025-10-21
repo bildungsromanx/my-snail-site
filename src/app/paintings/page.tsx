@@ -211,7 +211,6 @@
 //   );
 // } 
 
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -219,7 +218,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { paintingsByYear, years } from "../../data/paintings";
 
-export default function PaintingsClient() {
+export default function PaintingsPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -257,7 +256,6 @@ export default function PaintingsClient() {
         border: '2px solid #000080',
         boxShadow: '2px 2px 5px rgba(0,0,0,0.3)',
       }}>
-        {/* 📅 Year Navigation */}
         <h1 style={{
           color: 'red',
           fontFamily: "'League Script', cursive",
@@ -297,7 +295,6 @@ export default function PaintingsClient() {
           ))}
         </nav>
 
-        {/* 🎨 Gallery Grid */}
         <div style={{
           display: "grid",
           gap: "20px",
@@ -314,7 +311,8 @@ export default function PaintingsClient() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  cursor: "pointer"
+                  cursor: "pointer",
+                  // borderRadius: "12px"
                 }}
               />
             </Link>
@@ -324,4 +322,6 @@ export default function PaintingsClient() {
     </div>
   );
 }
+
+// 👇 This line prevents Next.js from trying to prerender
 export const dynamic = "force-dynamic";
