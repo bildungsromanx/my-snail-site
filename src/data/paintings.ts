@@ -55,7 +55,7 @@ export const paintings= [
   { id: "47", src: "/paintings/47.webp", caption: "Birthing (2)", date: "2025-08-15" },
   { id: "48", src: "/paintings/48.webp", caption: "Will No One Rid Me of This Turbulent Priest?", date: "2025-09-12" },
   { id: "49", src: "/paintings/49.webp", caption: "I Hate This Museum", date: "2025-09-12" },
-  // { id: "50", src: "/paintings/50.webp", caption: "B", date: "2025-08-14" },
+  // { id: "50", src: "/paintings/50.webp", caption: "", date: "2025-08-14" },
   { id: "51", src: "/paintings/51.webp", caption: "Prehistoric Man vs Male Loneliness Epidemic", date: "2025-05-24" },
   { id: "52", src: "/paintings/52.webp", caption: "Slinky", date: "2025-05-23" },
   { id: "53", src: "/paintings/53.webp", caption: "Mom, It's so Pretty Out There", date: "2025-05-17" },
@@ -64,6 +64,10 @@ export const paintings= [
   { id: "56", src: "/paintings/56.webp", caption: "Study of Sea Lion (2)", date: "2025-05-09" },
   { id: "57", src: "/paintings/57.webp", caption: "Study of Sea Lion", date: "2025-05-09" },
   { id: "58", src: "/paintings/58.webp", caption: "How I Felt That Morning", date: "2025-05-01" },
+  { id: "59", src: "/paintings/59.webp", caption: "Saw Something I Shouldn't Have", date: "2023-10-31" },
+  { id: "60", src: "/paintings/60.webp", caption: "Exiting The Whale", date: "2023-02-20" },
+  { id: "62", src: "/paintings/62.webp", caption: "Contact With The Outside", date: "2023-02-21" },
+  { id: "68", src: "/paintings/68.webp", caption: "Swooshing Inside The Whale", date: "2023-02-22" },
 ]
 
   export const paintingsByYear = paintings.reduce((acc, painting) => {

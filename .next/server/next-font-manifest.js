@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/eileenzelaya/Desktop/snail site Mac air/my-snail-site/src/app/layout":["static/media/6dffbd43b0d3a217-s.p.woff2","static/media/111c93f1bc244164-s.p.woff2"],"/Users/eileenzelaya/Desktop/snail site Mac air/my-snail-site/src/app/paintings/[id]/page":["static/media/6dffbd43b0d3a217-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

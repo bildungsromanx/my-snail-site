@@ -8,13 +8,13 @@ export default function Home() {
     <div
       style={{
         backgroundColor: "#C1D6EC",
-        minHeight: "100vh",
+        // minHeight: "100vh",
         position: "relative",
         padding: "20px",
         width: "90%",
         maxWidth: "100vw",
         margin: "0 auto",
-        overflow: "hidden",
+        // overflow: "hidden",
       }}
     >
       {/* Layout box */}
@@ -62,7 +62,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/homepage/october.jpg"
+            src="/homepage/november.jpg"
             alt="Art 1"
             width={900}
             height={500}
@@ -83,26 +83,9 @@ export default function Home() {
   }}
 >
   <p>
-    October&apos;s snail! Since it is October and spooky things are among us, I thought I&apos;d share some snail anatomy:
+    November&apos;s snail is a... 
   </p>
-  <p><strong>Class:</strong> Gastropoda</p>
-  <p><strong>Order:</strong> Pulmonata</p>
-  <p><strong>Species:</strong> Land snail, <em>Helix</em></p>
-
-  <ul style={{ listStyleType: "none", padding: 0 }}>
-    <li>
-      <strong>External morphology:</strong> Two pairs of tentacles on the head, eyes on the tip of the superior posterior pair. Pneumostome and anus are shown. Asymmetrical spiral shell.
-    </li>
-    <li>
-      <strong>Internal morphology:</strong> Pulmonary vessels on the roof of the mantle cavity and circulatory system with heart (blue). Digestive system (green). Reproductive hermaphroditic system (pink). Nervous system with ganglia in the nervous ring (black).
-    </li>
-    <li>
-      <strong>Radula:</strong> Teeth that point backward.
-    </li>
-    <li>
-      <strong>Eye section:</strong> Cross-section of the eye structure.
-    </li>
-  </ul>
+  <p>Goniobranchus geometricus, geometric goniobranchus</p>
 
   <em>New snail photo updated every month.</em>
 </div>
@@ -112,5 +95,6 @@ export default function Home() {
         <DraggableNote />
       </div>
     </div>
+
   );
 }
