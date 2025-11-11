@@ -1,6 +1,10 @@
-node_modules
-.next/cache
-.next/cache
-node_modules
+# dependencies
+/node_modules
+
+# production build
+/.next
+/out
+
+# misc
 .DS_Store
 *.log
