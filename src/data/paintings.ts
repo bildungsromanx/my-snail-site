@@ -68,6 +68,15 @@ export const paintings= [
   { id: "60", src: "/paintings/60.webp", caption: "Exiting The Whale", date: "2023-02-20" },
   { id: "62", src: "/paintings/62.webp", caption: "Contact With The Outside", date: "2023-02-21" },
   { id: "68", src: "/paintings/68.webp", caption: "Swooshing Inside The Whale", date: "2023-02-22" },
+  { id: "69", src: "/paintings/69.png", caption: "My Language is Dying & My New Friend in The Event Horizon", date: "2025-11-23" },
+  { id: "70", src: "/paintings/70.png", caption: "The Event Horizon", date: "2025-11-24" },
+  { id: "72", src: "/paintings/72.png", caption: "My Knees Buckled When You Shushed The Crowd", date: "2025-11-25" },
+  { id: "73", src: "/paintings/73.png", caption: "Looking For My Friend and a Snack in the Event Horizon", date: "2025-11-25" },
+  { id: "74", src: "/paintings/74.png", caption: "My Friend is Tired of the Event Horizon", date: "2025-11-26" },
+  { id: "75", src: "/paintings/75.png", caption: "You Cannot Lose Paint Painting", date: "2025-11-21" },
+  { id: "76", src: "/paintings/76.png", caption: "I Had a Sense of Hope Here", date: "2025-11-20" },
+  { id: "77", src: "/paintings/77.png", caption: "There's Gonna be Lots of Releasing in the Event Horizon", date: "2025-11-28" },
+
 ]
 
   export const paintingsByYear = paintings.reduce((acc, painting) => {

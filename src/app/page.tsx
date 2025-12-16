@@ -62,7 +62,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/homepage/november.jpg"
+            src="/homepage/december.jpg"
             alt="Art 1"
             width={900}
             height={500}
@@ -83,9 +83,9 @@ export default function Home() {
   }}
 >
   <p>
-    November&apos;s snail is a... 
+    December&apos;s snail is a... 
   </p>
-  <p>Goniobranchus geometricus, geometric goniobranchus</p>
+  <p>SNOW SNAIL. Named Slinky the Snail by the Bartz Brothers</p>
 
   <em>New snail photo updated every month.</em>
 </div>
